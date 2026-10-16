@@ -4,6 +4,8 @@ class Solution:
     def fill(self):
         for i in range(2, 31):
             self.F.append(self.F[i - 1] + self.F[i - 2])
+        
+        filled = True
 
     def fib(self, n: int) -> int:
         if not self.filled:
